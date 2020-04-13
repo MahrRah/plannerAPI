@@ -17,7 +17,7 @@ public class Task {
     @Column(name = "task_state")
     private boolean task_state;
     @Column(name = "UID")
-    private long uid;
+    private String uid;
     @Column(name = "task_type")
     private String taskType;
 
@@ -62,11 +62,11 @@ public class Task {
         this.task_state = task_state;
     }
 
-    public long getUid() {
+    public String getUid() {
         return uid;
     }
 
-    public void setUid(long uid) {
+    public void setUid(String uid) {
         this.uid = uid;
     }
 

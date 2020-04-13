@@ -15,7 +15,7 @@ public class TaskContoller {
     @Autowired
     private TaskService taskService;
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     public Collection<Task> getAllItems() {
         return taskService.getAllTasks();
     }
